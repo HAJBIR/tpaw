@@ -7,11 +7,13 @@ table {
 }
 
 a:hover {
-    color: orange;
+    color: rgba(255, 166, 0, 0.815);
 }
 
 tbody tr:nth-child(odd) {
     background: rgba(255, 0, 0, 0.151);
 }
+
+
 
 
