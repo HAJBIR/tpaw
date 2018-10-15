@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: lightgray ;
 }
 
 table {
@@ -11,5 +11,5 @@ a:hover {
 }
 
 th,td :nth-child(2n+1) {
-    background: red;
+    background: orange;
 }
