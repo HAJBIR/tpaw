@@ -7,17 +7,17 @@ table {
 }
 @media only screen and (max-width: 300px) {
     body {
-        background-color: lightblue;
+        background-color: rgb(107, 168, 189);
     }
 }
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
+        background-color: rgb(35, 138, 172);
     }
 }
 @media only screen and (max-width: 900px) {
     body {
-        background-color: lightblue;
+        background-color: rgb(5, 100, 129);
     }
 }
 
