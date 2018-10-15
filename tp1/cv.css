@@ -10,6 +10,6 @@ a:hover {
     color: orange;
 }
 
-th,td :nth-child(2n+1) {
+td :nth-child(2n+1) {
     background: orange;
 }
