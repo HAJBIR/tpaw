@@ -7,7 +7,7 @@ table {
 }
 @media only screen and (max-width: 300px) {
     body {
-        background-color: rgb(107, 168, 189);
+        background-color: rgb(115, 182, 204);
     }
 }
 @media only screen and (max-width: 600px) {
