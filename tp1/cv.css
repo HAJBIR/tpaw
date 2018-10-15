@@ -9,7 +9,3 @@ table {
 a:hover {
     color: orange;
 }
-
-td :nth-child(2n+1) {
-    background: orange;
-}
