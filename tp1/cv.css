@@ -10,7 +10,7 @@ a:hover {
     color: orange;
 }
 
-table:nth-child(3n+0) {
+tbody tr:nth-child(3n+0) {
     background: rgba(255, 0, 0, 0.151);
 }
 
