@@ -10,9 +10,6 @@ a:hover {
     color: rgba(255, 166, 0, 0.815);
 }
 
-tbody tr:nth-child(odd) {
-    background: rgba(255, 0, 0, 0.151);
-}
 
 tbody tr:nth-child(odd) {
     background: rgba(255, 0, 0, 0.151);
@@ -22,7 +19,10 @@ tbody tr:nth-child(odd) {
 tbody tr:hover
  {
     
-    background-color:rgb(133, 165, 70) ;
+    background-color : rgb(59, 16, 16)  ;
 
 }
+
+
+
 
