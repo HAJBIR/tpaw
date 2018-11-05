@@ -14,47 +14,55 @@
           body{
               background-color: #e9ebee;              
               font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
+              font-size: 16px; 
               margin: 0 auto;
-              max-width: 800px;              
+              max-width: 800px;   
+                      
           }
+          form {background-color: white};
         </style>
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="js/main.js"></script>-->
+        <link rel="stylesheet"  type="text/css" href="formulaire.css"/>
+        <script type="text/javascript" src="formulaire.js"></script>
     </head>
     <body>   
         
       <img src="../galilee.png" alt="Logo Galilee"/>
       <div>
-            <form method="POST" action="index">
-                <fieldset>
+            <form>
+                
                     <legend> saisie d'une fiche "Personne" </legend>
     
                     <label for="Nom">Nom </label>
-                    <input type="text" id="Nom" name="Nom" value="" size="20" maxlength="50" />
+                    <input type="text" id="Nom" name="Nom"  minlength="5"  maxlength="50" />
                     <br />
                     
                     <label for="Prenom">Prénom </label>
-                    <input type="text" id="Prenom" name="Prenom" value="" size="20" maxlength="50" />
+                    <input type="text" id="Prenom" name="Prenom" minlength="5" maxlength="20" />
                     <br />
     
                     <label for="Date de Naissance " placeholder="JJ/MM/AAAA">Date de naissance </label>
-                    <input type="date" id="Date de Naissance " name="Date de Naissance " value="" size="20" maxlength="50" />
+                    <input type="date" id="Date" name="Date"  minlength="5" maxlength="20" />
                     <br />
     
                     <label for="Addresse">Addresse </label>
-                    <input type="text" id="telephoneClient" name="telephoneClient" value="" size="20" maxlength="50" />
+                    <input type="text" id="Adresse" name="Adresse"  minlength="5"  maxlength="50" />
                     <br />
                     
                     <label for="Email">Email</label>
-                    <input type="email" id="Email" name="Email" value="" size="20" maxlength="50" />
+                    <input type="email" id="Email" name="Email"  minlength="5"  maxlength="30" />
                     <br />
-                </fieldset>
-                <input type="submit" value="Valider"  />
+                
+                <input type="button" value="Valider"onclick="validation()"/>
                 
             </form>
         </div>
+        <div id="error">  </div>
+        <div id="resultat">  </div>
+
+       
     </body>
 </html>
