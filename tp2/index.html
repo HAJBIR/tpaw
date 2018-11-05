@@ -24,10 +24,37 @@
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="js/main.js"></script>-->
     </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+    <body>   
+        
+      <img src="../galilee.png" alt="Logo Galilee"/>
+      <div>
+            <form method="POST" action="index">
+                <fieldset>
+                    <legend> saisie d'une fiche "Personne" </legend>
+    
+                    <label for="Nom">Nom </label>
+                    <input type="text" id="Nom" name="Nom" value="" size="20" maxlength="50" />
+                    <br />
+                    
+                    <label for="Prenom">Prénom </label>
+                    <input type="text" id="Prenom" name="Prenom" value="" size="20" maxlength="50" />
+                    <br />
+    
+                    <label for="Date de Naissance " placeholder="JJ/MM/AAAA">Date de naissance </label>
+                    <input type="date" id="Date de Naissance " name="Date de Naissance " value="" size="20" maxlength="50" />
+                    <br />
+    
+                    <label for="Addresse">Addresse </label>
+                    <input type="text" id="telephoneClient" name="telephoneClient" value="" size="20" maxlength="50" />
+                    <br />
+                    
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="Email" value="" size="20" maxlength="50" />
+                    <br />
+                </fieldset>
+                <input type="submit" value="Valider"  />
+                
+            </form>
+        </div>
     </body>
 </html>
