@@ -21,13 +21,13 @@ function validation() {
 
     
     
-    else if (Prenom=="")
+    else if (prenom=="")
 
     {document.querySelector("#error").textContent="le prenom est obligatoire";
     document.getElementById("error").setAttribute('style','display:block');}
     
 
-    else if (Prenom.length<5) {
+    else if (prenom.length<5) {
         document.querySelector("#error").textContent=" Prenom doit contenir au moins 5 caractères";
         document.getElementById("error").setAttribute('style','display:block');
     }
