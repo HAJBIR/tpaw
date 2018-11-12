@@ -1,16 +1,5 @@
-
-
-
-
 $( document ).ready(function() {
-    // ce code est exécuter une fois que toute la page est téléchargée par le navigateur
-    // voir plus : https://www.w3schools.com/js/js_htmldom.asp
-     console.log( "DOM ready!" );
-
-    
-
-
-     $("#Valider").on("click",function(event)
+         $("#submit").on("click",function(event)
           {event.preventDefault();
             
            
@@ -20,7 +9,7 @@ $( document ).ready(function() {
         $( ".modal-body" ).text("Nom requis");
 
         
-        $( "#myModal" ).model("show ");
+        $( "#myModal" ).modal("show ");
 
      }
 
@@ -28,21 +17,21 @@ $( document ).ready(function() {
             $( ".modal-body" ).text("Nom requis");
 
          
-            $( "#myModal" ).model("show ");}
+            $( "#myModal" ).modal("show ");}
 
             else if ($( "#Date" ).val().length<5) { 
                 $( ".modal-body" ).text("Nom requis");
               
-                $( "#myModal" ).model("show ");}
+                $( "#myModal" ).modal("show ");}
 
-          else  if ($( "#Addresse" ).val().length<5) { 
+          else  if ($( "#Adresse" ).val().length<5) { 
             $( ".modal-body" ).text("Nom requis");
                 
-                $( "#myModal" ).model("show ");}
+                $( "#myModal" ).modal("show ");}
 
                else  if ($( "#Email" ).val().length<5) { 
                     $( ".modal-body" ).text("Nom requis");
-                    $( "#myModal" ).model("show ");}
+                    $( "#myModal" ).modal("show ");}
 
 
                     else {
