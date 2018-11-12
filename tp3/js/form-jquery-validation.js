@@ -41,10 +41,10 @@ $(document).ready(function () {
         else {
 
 
-            $(".modal-title").html("Bienvenue " + $("#nom").val());
+            $(".modal-title").html("Bienvenue " + $("#Nom").val());
 
-            $(".modal-body").html(" vous etes né le  : " + $("#date").val());
-            $(".modal-body").append("<img src = 'https://maps.googleapis.com/maps/api/staticmap?markers=" + $("#adresse").val() +
+            $(".modal-body").html(" vous etes né le  : " + $("#Date").val());
+            $(".modal-body").append("<img src = 'https://maps.googleapis.com/maps/api/staticmap?markers=" + $("#Adresse").val() +
                 "&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg' >");
             $('#myModal').modal("show");
 
