@@ -23,11 +23,55 @@
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="main.js"></script>-->
+        <script src="js/form-jquery-validation.js"></script>
+        <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+
+        <!-- CSS boostrap -->
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+
+         <script src="js/popper.min.js"></script>
+
+<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+<script src="js/bootstrap.min.js"></script>   
     </head>
     <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
+        <div class="container">
+              <form>
+                  
+                      <legend> saisie d'une fiche "Personne" </legend>
+
+                      <div class="form-group">
+                        <label for="Nom">Nom </label>
+                        <input type="text" class="form-control" id="Nom" name="Nom"  minlength="5"  maxlength="50" />
+                       
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="Prenom">Prenom</label>
+                        <input type="text" class="form-control" id="Prenom" name="Prenom"  minlength="5"  maxlength="50" />
+                       
+                      </div> 
+                      <div class="form-group">
+                      <label for="Date de Naissance " placeholder="JJ/MM/AAAA">Date de naissance </label>
+                      <input type="date" class="form-control" id="Date" name="Date"  minlength="5" maxlength="20" />
+                      
+                  
+                      <div class="form-group">
+                      <label for="Addresse">Addresse </label>
+                      <input type="text" class="form-control" id="Adresse" name="Adresse"  minlength="5"  maxlength="50" />
+                    </div> 
+                      
+                      <div class="form-group">
+                        <label for="Email">Email </label>
+                        <input type="Email" class="form-control" id="Email"  placeholder="Enter email">
+                        
+                      </div>
+                  
+                      <button type="Valider" class="btn btn-primary">Valider</button>
+                  
+              </form>
+          </div>
     </body>
 </html>
