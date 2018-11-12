@@ -18,29 +18,29 @@ $( document ).ready(function() {
 
      if ($( "#Nom" ).val().length<5) { 
 
-        $( ".modal-body" ).text("Nom requis ");
+        $( ".modal-body" ).text("Nom requis");
         $( "#myModal" ).model("show ");
 
      }
 
          if ($( "#Prenom" ).val().length<5) { 
 
-            $( ".modal-body" ).text("Nom requis ");
+            $( ".modal-body" ).text("Nom requis");
             $( "#myModal" ).model("show ");}
 
             if ($( "#Date" ).val().length<5) { 
 
-                $( ".modal-body" ).text("Nom requis ");
+                $( ".modal-body" ).text("Nom requis");
                 $( "#myModal" ).model("show ");}
 
            if ($( "#Addresse" ).val().length<5) { 
 
-                $( ".modal-body" ).text("Nom requis ");
+                $( ".modal-body" ).text("Nom requis");
                 $( "#myModal" ).model("show ");}
 
                 if ($( "#Email" ).val().length<5) { 
 
-                    $( ".modal-body" ).text("Nom requis ");
+                    $( ".modal-body" ).text("Nom requis");
                     $( "#myModal" ).model("show ");}
                    
 
