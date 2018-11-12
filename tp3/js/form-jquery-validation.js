@@ -24,32 +24,56 @@ $( document ).ready(function() {
 
      }
 
-         if ($( "#Prenom" ).val().length<5) { 
+         else if ($( "#Prenom" ).val().length<5) { 
             $( ".modal-body" ).text("Nom requis");
 
          
             $( "#myModal" ).model("show ");}
 
-            if ($( "#Date" ).val().length<5) { 
+            else if ($( "#Date" ).val().length<5) { 
                 $( ".modal-body" ).text("Nom requis");
               
                 $( "#myModal" ).model("show ");}
 
-           if ($( "#Addresse" ).val().length<5) { 
+          else  if ($( "#Addresse" ).val().length<5) { 
             $( ".modal-body" ).text("Nom requis");
                 
                 $( "#myModal" ).model("show ");}
 
-                if ($( "#Email" ).val().length<5) { 
+               else  if ($( "#Email" ).val().length<5) { 
                     $( ".modal-body" ).text("Nom requis");
                     $( "#myModal" ).model("show ");}
+
+
+                    else {
+
+
+                        $(".modal-title").html("Bienvenue " + $("#nom").val() );
+
+                        $(".modal-body").html(" vous etes né le  : " + $("#date").val());
+                        $(".modal-body").append("<img src = 'https://maps.googleapis.com/maps/api/staticmap?markers="+ $("#adresse").val()+
+                        "&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg' >");
+                        $('#myModal').modal("show");
+
+
+
+
+
+
+
+
+
+
+
+                    }
                    
 
-      alert("zakiya")
+    
 
 
    
      
      // Y mettre le code jQuery pour valider tous les champs du formulaire
  });
+
 });

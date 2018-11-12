@@ -23,7 +23,7 @@
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="main.js"></script>-->
-        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/form-jquery-validation.js"></script>
         
         <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
@@ -70,8 +70,10 @@
                         <input type="Email" class="form-control" id="Email"  placeholder="Enter email">
                         
                       </div>
+
+
                   
-                      <button type="Valider" class="btn btn-primary">Valider</button>
+                      <input type="submit" id="submit" value="Valider" class="btn btn-primary"/>
                   
               </form>
           </div>
@@ -94,5 +96,7 @@
               </div>
             </div>
           </div>
+          <div id="error">  </div>
+        <div id="resultat">  </div>
     </body>
 </html>
