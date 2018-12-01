@@ -14,26 +14,26 @@ $(document).ready(function () {
         }
 
         else if ($("#Prenom").val().length < 5) {
-            $(".modal-body").text("Nom requis");
+            $(".modal-body").text("Prenom requis");
 
 
             $("#myModal").modal("show");
         }
 
         else if ($("#Date").val().length < 5) {
-            $(".modal-body").text("Nom requis");
+            $(".modal-body").text("Date requis");
 
             $("#myModal").modal("show");
         }
 
         else if ($("#Adresse").val().length < 5) {
-            $(".modal-body").text("Nom requis");
+            $(".modal-body").text("Adresse requis");
 
             $("#myModal").modal("show");
         }
 
         else if ($("#Email").val().length < 5) {
-            $(".modal-body").text("Nom requis");
+            $(".modal-body").text("Email requis");
             $("#myModal").modal("show");
         }
 
