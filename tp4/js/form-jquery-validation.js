@@ -30,7 +30,7 @@ $(document).ready(function () {
             $(".modal-body").text("Adresse requis");
 
             $("#myModal").modal("show");
-            <button onclick="getLocation()">GPS</button>
+           
         }
 
         else if ($("#mail").val().length < 5) {
