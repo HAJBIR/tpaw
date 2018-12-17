@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#submit").on("click", function (event) {
         event.preventDefault();
 
-
+        $('#gps').click(getLocation);
 
 
         if ($("#name").val().length < 5) {
@@ -24,6 +24,7 @@ $(document).ready(function () {
             $(".modal-body").text("Date requis");
 
             $("#myModal").modal("show");
+
         }
 
         else if ($("#adresse").val().length < 5) {
@@ -49,7 +50,7 @@ $(document).ready(function () {
                 "&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg' >");
             $('#myModal').modal("show");
 
-
+        
 
 
 
