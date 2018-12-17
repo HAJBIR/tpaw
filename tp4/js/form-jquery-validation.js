@@ -2,9 +2,7 @@ $(document).ready(function () {
     $("#submit").on("click", function (event) {
         event.preventDefault();
 
-    $("#gps").on("click", function (event) {
-        event.preventDefault();
-        getLocation();});
+    
 
         if ($("#name").val().length < 5) {
             $(".modal-body").text("Nom requis");
@@ -67,12 +65,15 @@ $(document).ready(function () {
         }
 
 
-
+        $("#gps").on("click", function (event) {
+            event.preventDefault();
+            getLocation();});
 
 
 
 
         // Y mettre le code jQuery pour valider tous les champs du formulaire
     });
+
 
 });
