@@ -9,7 +9,7 @@ $(document).ready(function () {
 
             console.log("Je suis une chaîne".length);
             $("#myModal").modal("show");
-            i = 0;
+           
         
 
         }
@@ -78,10 +78,10 @@ $(document).ready(function () {
         event.preventDefault();
         getLocation();});
 
-        i = 0;
+         i = 0;
         $(document).ready(function(){
-          $("name").keypress(function(){
-            $("span").text(i += 1);
+          $("#name").keypress(function(){
+            $("#span").text(i += 1);
           });
 
         
