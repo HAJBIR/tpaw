@@ -2,8 +2,9 @@ $(document).ready(function () {
     $("#submit").on("click", function (event) {
         event.preventDefault();
 
-        $('#gps').click(getLocation);
-
+    $('#gps').on("click", function (event) {
+        event.preventDefault();
+        getLocation();});
 
         if ($("#name").val().length < 5) {
             $(".modal-body").text("Nom requis");
@@ -24,6 +25,9 @@ $(document).ready(function () {
             $(".modal-body").text("Date requis");
 
             $("#myModal").modal("show");
+
+        
+
 
         }
 
