@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#submit").on("click", function (event) {
         event.preventDefault();
 
-    $('#gps').on("click", function (event) {
+    $("#gps").on("click", function (event) {
         event.preventDefault();
         getLocation();});
 
