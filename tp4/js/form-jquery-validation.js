@@ -79,33 +79,43 @@ $(document).ready(function () {
         getLocation();});
 
          
-          $(document).ready(function(){
-          $("#name").keypress(function(){
-            $("#span1").text($("#name").val().length);
-        });
+        $(document).ready(function(){
+            $("#name").keypress(function(){
 
-           });
-            
-          $(document).ready(function(){
-            $("#firstname").keypress(function(){
-              $("#span2").text($("#firstname").val().length);
-            });
-                });
-
-              $(document).ready(function(){
-                $("#birth").keypress(function(){
-                  $("#span3").text($("#birth").val().length);
-             
+              $("#span1").text($("#name").val().length);
               });
-                        });
-              
+              $("#name").keydown(function(){
+                
+                $("#span1").text($("#name").val().length);
+
+                });
+                $("#name").keyup(function(){
+                
+                    $("#span1").text($("#name").val().length);
+                    });
+      
+
+               });
+            
+         
 
 
 
           $(document).ready(function(){
             $("#mail").keypress(function(){
+
               $("#span4").text($("#mail").val().length);
               });
+              $("#mail").keydown(function(){
+                
+                $("#span4").text($("#mail").val().length);
+
+                });
+                $("#mail").keyup(function(){
+                
+                    $("#span4").text($("#mail").val().length);
+                    });
+      
 
                });
               
