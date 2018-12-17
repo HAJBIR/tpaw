@@ -7,8 +7,10 @@ $(document).ready(function () {
         if ($("#name").val().length < 5) {
             $(".modal-body").text("Nom requis");
 
-
+            console.log("Je suis une chaîne".length);
             $("#myModal").modal("show");
+            i = 0;
+        
 
         }
 
@@ -71,11 +73,17 @@ $(document).ready(function () {
 
         // Y mettre le code jQuery pour valider tous les champs du formulaire
     });
-    
+
     $("#gps").on("click", function (event) {
         event.preventDefault();
         getLocation();});
 
+        i = 0;
+        $(document).ready(function(){
+          $("name").keypress(function(){
+            $("span").text(i += 1);
+          });
 
+        
 
 });
