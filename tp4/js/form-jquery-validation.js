@@ -78,12 +78,13 @@ $(document).ready(function () {
         event.preventDefault();
         getLocation();});
 
-         i = 0;
-        $(document).ready(function(){
+         
+          $(document).ready(function(){
           $("#name").keypress(function(){
-            $("#span").text(i += 1);
+            $("#span").text($("#name").val().length);
+         
           });
 
-        
+        });
 
 });
