@@ -81,7 +81,9 @@ $(document).ready(function () {
 
 
 
-    
+                   $("#gps").on("click", function (event) {
+                        event.preventDefault();
+                                 getLocation();});
 
 
 
@@ -126,9 +128,7 @@ $(document).ready(function () {
 
 
 
-    $("#gps").on("click", function (event) {
-        event.preventDefault();
-        getLocation();});
+      
 
         
          
@@ -137,20 +137,20 @@ $(document).ready(function () {
     
 
          
-$(document).ready(function(){
-            $("#name").keypress(function(){
+                     $(document).ready(function(){
+                        $("#name").keypress(function(){
 
-              $("#span1").text($("#name").val().length);
-              });
-              $("#name").keydown(function(){
+                           $("#span1").text($("#name").val().length);
+                                                                        });
+                                        $("#name").keydown(function(){
                 
-                $("#span1").text($("#name").val().length);
+                               $("#span1").text($("#name").val().length);
 
-                });
-                $("#name").keyup(function(){
+                                     });
+                                       $("#name").keyup(function(){
                 
-                    $("#span1").text($("#name").val().length);
-                    });
+                                       $("#span1").text($("#name").val().length);
+                                            });
       
 
                                      });
