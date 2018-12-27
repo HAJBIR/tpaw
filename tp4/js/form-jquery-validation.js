@@ -78,7 +78,7 @@ $(document).ready(function () {
         // Y mettre le code jQuery pour valider tous les champs du formulaire
     });   
                    $("#gps").on("click", function (event) {
-        event.preventDefault();
+                   event.preventDefault();
                  getLocation();});
                                                       });
 
