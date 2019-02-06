@@ -1,6 +1,4 @@
-body {
-    background-color: rgba(211, 211, 211, 0.884) ;
-}
+
 
 table {
     background-color: white;
@@ -27,14 +25,14 @@ a:hover {
 
 
 tbody tr:nth-child(odd) {
-    background: rgba(255, 0, 0, 0.151);
+    background: rgba(100, 92, 92, 0.151);
 }
 
 
 tbody tr:hover
  {
     
-    background-color : rgb(59, 16, 16)  ;
+    background-color : rgb(126, 145, 206)  ;
 
 }
 
