@@ -7,7 +7,7 @@ $(document).ready(function () {
         if ($("#name").val().length < 5) {
             $(".modal-body").text("Nom requis");
 
-            console.log("Je suis une chaîne".length);
+          
             $("#myModal").modal("show");
               
             
@@ -100,12 +100,12 @@ $(document).ready(function () {
                           for(var index in contactList ){
                             
                             
-                        document.querySelector("table tbody").innerHTML =document.querySelector("table tbody").innerHTML+'<tr><td>'+contactList[index].name+'</td><td>'+contactList[index].firstname+'</td><td>'+contactList[index].date+'</td><td>'+contactList[index].adress+'</td><td>'+contactList[index].mail+'</td></tr>' ; 
-                                         } ;  })  ;  });
+                       document.querySelector("table tbody").innerHTML =document.querySelector("table tbody").innerHTML+'<tr><td>'+contactList[index].name+'</td><td>'+contactList[index].firstname+'</td><td>'+contactList[index].date+'</td><td>'+contactList[index].adress+'</td><td>'+contactList[index].mail+'</td></tr>' ; 
+                                        } ;  })  ;  });
 
                
 
-
++
                               
                                   
 
